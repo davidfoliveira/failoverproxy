@@ -1,2 +1,4 @@
+- Support for logging when the number of sockets reaches the maximum
+- Support for notifying somebody if all the backends are down after some time
 - Support for live loading and applying configurations
 - Answer validation support
