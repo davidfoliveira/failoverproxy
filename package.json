@@ -2,7 +2,7 @@
   "author": "David Oliveira <d.oliveira@prozone.org>",
   "name": "failoverproxy",
   "description": "An HTTP proxy with multi-blackend failover support and GET cache support",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/davidfoliveira/failoverproxy/"
