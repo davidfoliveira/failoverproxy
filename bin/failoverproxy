@@ -1,8 +1,23 @@
 #!/usr/bin/env node
 
 var
-	FailoverProxy = require('../lib/failoverproxy');
-	proxy = new FailoverProxy({
-		DEBUG: true,
-		configFile: process.argv[2] || "conf/default.conf"
-	});
+	FailoverProxy = require('../lib/failoverproxy'),
+	proxy,
+	opts = {
+		configFile: "conf/default.conf"
+	};
+
+
+// Read the options
+for ( var x = 2 ; x < process.argv.length ; x++ ) {
+	var arg = process.argv[x];
+	if ( arg.match(/\-\-(\w+)/) ) {
+		var flag = RegExp.$1.toUpperCase();
+		opts[flag] = true;
+	}
+	else
+		opts.configFile = arg;
+}
+
+// Start the proxy
+proxy = new FailoverProxy(opts);

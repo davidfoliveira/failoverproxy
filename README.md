@@ -66,4 +66,4 @@ You can watch for more examples on the examples/ directory.
 
 # Run it!
 
-	failoverproxy config_file
+	$ failoverproxy config_file --debug
