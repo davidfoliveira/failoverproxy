@@ -73,3 +73,6 @@ You can watch for more examples on the examples/ directory.
 * `errors` - An object containing an index of error codes, containing a `document` string and an `headers` object;
 
 
+# Run it!
+
+	failoverproxy.js config_file
