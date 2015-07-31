@@ -57,6 +57,7 @@ You can watch for more examples on the examples/ directory.
 
 * `httpTimeout` - The number of milliseconds to wait for a request on the backend (defaults to 5000);
 * `httpTestTimeout` - The number of milliseconds to wait on a backend test request (defaults to 1000);
+* `httpMaxSockets` - The number of maximum open sockets for each backend (defaults to 256);
 * `backendWatchInterval`  - The number of milliseconds of interval to perform HTTP tests requests to backends with status `down`;
 * `backendSelector` - A function which permits to select the next active backend from a supplied list;
 * `cache` - An object containing the settings to be used for cache when just the string `'cache'` is used for backend;
