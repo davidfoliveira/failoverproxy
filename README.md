@@ -37,11 +37,8 @@ The backend object supports the following properties:
 The server backends (`type: "server`) support the following properties:
 
 * `proto`  - Backend protocol (http or https);
-
 * `host`   - The backend hostname;
-
 * `port`   - The backend port; Defaults to `80`;
-
 * `prefix` - The URL prefix to be used on the backend;
 
 The cache backends (`type: "cache"`) support the following properties:
@@ -59,17 +56,11 @@ You can watch for more examples on the examples/ directory.
 # Other configurations
 
 * `httpTimeout` - The number of milliseconds to wait for a request on the backend (defaults to 5000);
-
 * `httpTestTimeout` - The number of milliseconds to wait on a backend test request (defaults to 1000);
-
-* `backendWatchInterval*  - The number of milliseconds of interval to perform HTTP tests requests to backends with status `down`;
-
+* `backendWatchInterval`  - The number of milliseconds of interval to perform HTTP tests requests to backends with status `down`;
 * `backendSelector` - A function which permits to select the next active backend from a supplied list;
-
 * `cache` - An object containing the settings to be used for cache when just the string `'cache'` is used for backend;
-
 * `backends` - An array containing backend objects, URLs (as server backends) or the string `'cache'` as a cache backend using the `cache` configuration settings;
-
 * `errors` - An object containing an index of error codes, containing a `document` string and an `headers` object;
 
 
