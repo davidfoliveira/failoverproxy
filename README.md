@@ -75,4 +75,4 @@ You can watch for more examples on the examples/ directory.
 
 # Run it!
 
-	failoverproxy.js config_file
+	failoverproxy config_file
